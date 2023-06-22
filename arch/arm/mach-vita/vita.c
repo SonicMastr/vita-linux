@@ -32,7 +32,8 @@ static const char *const vita_dt_compat[] = {
 	NULL,
 };
 
-DT_MACHINE_START(VITA_DT, "PlayStation Vita (Device Tree Support)").dt_compat =
-	vita_dt_compat,
-			  .l2c_aux_val = 0, .l2c_aux_mask = ~0,
-			  .pv_fixup = vita_pv_fixup, MACHINE_END
+DT_MACHINE_START(VITA_DT, "PlayStation Vita (Device Tree Support)")
+	.dt_compat = vita_dt_compat,
+	.l2c_aux_val = 0, .l2c_aux_mask = ~0,
+	.pv_fixup = vita_pv_fixup, 
+MACHINE_END
