@@ -1555,6 +1555,19 @@ config SERIAL_SUNPLUS_CONSOLE
 	  you can alter that using a kernel command line option such as
 	  "console=ttySUPx".
 
+config SERIAL_VITA_UART
+	bool "PlayStation Vita UART support"
+	depends on ARCH_VITA
+	select SERIAL_CORE
+	help
+	  This driver supports the PlayStation Vita UART.
+
+config SERIAL_VITA_UART_CONSOLE
+	bool "PlayStation Vita UART console support"
+	depends on SERIAL_VITA_UART
+	select SERIAL_CORE_CONSOLE
+	select SERIAL_EARLYCON
+
 endmenu
 
 config SERIAL_MCTRL_GPIO

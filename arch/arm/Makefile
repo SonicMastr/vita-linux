@@ -225,6 +225,7 @@ machine-$(CONFIG_ARCH_U8500)		+= ux500
 machine-$(CONFIG_ARCH_VT8500)		+= vt8500
 machine-$(CONFIG_ARCH_ZYNQ)		+= zynq
 machine-$(CONFIG_PLAT_VERSATILE)	+= versatile
+machine-$(CONFIG_ARCH_VITA) 		+= vita
 machine-$(CONFIG_PLAT_SPEAR)		+= spear
 
 # legacy platforms provide their own mach/*.h headers globally,
